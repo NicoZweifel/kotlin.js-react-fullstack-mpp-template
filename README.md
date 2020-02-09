@@ -16,8 +16,7 @@ Includes:
 
 > ./gradlew run
 
-dependencies used for js target:
-
+- Dependencies used for js target:
 ```kt
 val jsMain by getting {
     dependencies {
@@ -40,8 +39,24 @@ val jsMain by getting {
 }
 ```
 
-React Example is in App.kt:
+- WebPack:
+```kt
+val jsBrowserWebpack by tasks.named<KotlinWebpack>("jsBrowserWebpack")
 
+val jvmJar by tasks.named<Jar>("jvmJar") {
+    dependsOn(jsBrowserWebpack)
+    from(jsBrowserWebpack.entry.name,jsBrowserWebpack.destinationDirectory)
+}
+
+val run by tasks.register<JavaExec>("run") {
+    dependsOn("jvmJar")
+    group = "application"
+    main = "template.ProgramKt"
+    classpath(configurations.named("jvmRuntimeClasspath"), jvmJar )
+}
+```
+
+- React Example is in App.kt:
 ```kt
 class App: RComponent<RProps, RState>() {
     override fun RBuilder.render() {
@@ -70,4 +85,4 @@ fun RBuilder.welcome(name: String = "REACT WORLD!!!") = child(Greet::class) {
 }
 ```
 
-Im sorry if there's anything wrong with it, i am new to react. :)
+Im sorry if there's anything wrong with it, i am new to react :)
