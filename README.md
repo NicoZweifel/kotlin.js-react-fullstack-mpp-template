@@ -39,7 +39,7 @@ val jsMain by getting {
 }
 ```
 
-- WebPack:
+- Jars:
 ```kt
 val jsBrowserWebpack by tasks.named<KotlinWebpack>("jsBrowserWebpack")
 
