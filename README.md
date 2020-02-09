@@ -2,7 +2,7 @@
 
 
 - Since all the samples and templates i could find were using npm-create-kotlin-react-app or using outdated/obsolete libraries,
-  i created one from scratch.
+  i created one from scratch and now i thought why not share it.
 
 - This is a sample/template for a multi-platform project targeting jvm backend and js frontend.
 
