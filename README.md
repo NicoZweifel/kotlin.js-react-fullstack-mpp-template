@@ -80,7 +80,7 @@ class Greet: RComponent<GreetProps, RState>() {
     }
 }
 
-fun RBuilder.welcome(name: String = "REACT WORLD!!!") = child(Greet::class) {
+fun RBuilder.greet(name: String = "REACT WORLD!!!") = child(Greet::class) {
     attrs.name = name
 }
 ```
