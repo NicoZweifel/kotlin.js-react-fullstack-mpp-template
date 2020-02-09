@@ -1,2 +1,2 @@
-rootProject.name = "KotlinJs-React-Fullstack-Template"
+rootProject.name = "kotlin.js-react-fullstack-mpp-template"
 

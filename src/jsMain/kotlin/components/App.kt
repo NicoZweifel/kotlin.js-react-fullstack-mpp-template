@@ -7,7 +7,7 @@ import styles.ComponentStyles
 
 class App: RComponent<RProps, RState>() {
     override fun RBuilder.render() {
-        welcome()
+        greet()
     }
 }
 
@@ -27,6 +27,6 @@ class Greet: RComponent<GreetProps, RState>() {
     }
 }
 
-fun RBuilder.welcome(name: String = "REACT WORLD!!!") = child(Greet::class) {
+fun RBuilder.greet(name: String = "REACT WORLD!!!") = child(Greet::class) {
     attrs.name = name
 }

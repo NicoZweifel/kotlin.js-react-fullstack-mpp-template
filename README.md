@@ -1,4 +1,4 @@
-# kotlin.js-react-fullstack-template
+# kotlin.js-react-fullstack-mpp-template
 
 
 - Since all the samples and templates i could find were using npm-create-kotlin-react-app or using outdated/obsolete libraries,

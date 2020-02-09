@@ -21,18 +21,18 @@ fun main() {
             get("/") {
                 call.respondHtml {
                     head {
-                        title("Kotlin.Js-React")
+                        title("Welcome to kotlin react!")
                     }
                     body {
                         div {
                             id = "root"
                         }
-                        script(src = "/static/KotlinJs-React-Fullstack-Template.js") {}
+                        script(src = "/static/kotlin.js-react-fullstack-mpp-template.js") {}
                     }
                 }
             }
             static("/static") {
-                resource("KotlinJs-React-Fullstack-Template.js")
+                resource("kotlin.js-react-fullstack-mpp-template.js")
             }
         }
     }.start(wait = true)
