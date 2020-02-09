@@ -3,6 +3,7 @@ package styles
 import kotlinx.css.*
 import styled.StyleSheet
 
+//Example Style Values
 object ComponentStyles : StyleSheet("ComponentStyles", isStatic = true) {
     val primary by css{
         applyMargin()
@@ -11,6 +12,7 @@ object ComponentStyles : StyleSheet("ComponentStyles", isStatic = true) {
         backgroundColor = Colors.DarkMain.primary
     }
 
+    //Just some examples
     private fun CSSBuilder.applyMargin(){
         margin = "10px"
     }
