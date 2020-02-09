@@ -4,17 +4,19 @@
 - Since all the samples and templates i could find were using npm-create-kotlin-react-app or using outdated/obsolete libraries,
   i created one from scratch.
 
-- This is a sample/template for a multi-platform project targeting Jvm for the server and Js for the frontend.
-- There is a common module for sharing code between the 2 targets + tests for each target.
+- This is a sample/template for a multi-platform project targeting jvm backend and js frontend.
 
-- There is no packages-config.json or webpack-config.js, everything is done with gradle.
+Includes:
+
+- Common module for sharing code between the 2 targets.
+
+- There is no packages-config.json or webpack-config.js in the project folder, everything is built using gradle.
 
 - Task that runs the packaged .jar:
 
 > ./gradlew run
 
-
-dependencies used:
+dependencies used for js target:
 
 ```kt
 val jsMain by getting {
@@ -37,7 +39,6 @@ val jsMain by getting {
     }
 }
 ```
-
 
 React Example is in App.kt:
 
