@@ -1,4 +1,4 @@
-# kotlin.js-react-fullstack-mpp-template
+# kotlin.js-react-fullstack-mpp-template ![gradlew build](https://github.com/NicoZweifel/kotlin.js-react-fullstack-mpp-template/workflows/gradlew%20build/badge.svg)
 
 
 - Since all the samples and templates i could find were using npm-create-kotlin-react-app or using outdated/obsolete libraries,
