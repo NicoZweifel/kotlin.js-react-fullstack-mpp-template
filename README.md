@@ -12,7 +12,7 @@ Includes:
 
 - There is no packages-config.json or webpack-config.js in the project folder, everything is built using gradle.
 
-- Task that runs the packaged .jar:
+- Task that creates/runs the packaged .jar:
 
 > ./gradlew run
 
