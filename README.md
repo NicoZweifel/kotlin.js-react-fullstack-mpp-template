@@ -60,7 +60,7 @@ val run by tasks.register<JavaExec>("run") {
 ```kt
 class App: RComponent<RProps, RState>() {
     override fun RBuilder.render() {
-        welcome()
+        greet()
     }
 }
 
